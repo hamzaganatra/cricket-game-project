@@ -12,9 +12,10 @@
 
     <!-- Name Input -->
     <div class="name-wrapper" id="name-wrapper">
-        <input type="text" placeholder="Enter Your Name" name="name" id="name">
+        <h2>Cricket Game</h2>
+        <input type="text" placeholder="Please Enter Your Name" name="name" id="name">
 
-        <button id="next">Next</button>
+        <button id="next">Next</button> 
     </div>
 
     <!-- Team Selection -->
@@ -51,12 +52,23 @@
     <!-- Play Screen -->
     <div id="play-wrapper" class="hide" tabindex="0">
         <h1><span>You're</span> <span id="play-type">-</span> <span>ing</span></h1>
-        <span>Score: </span><span id="score">0</span>
-        <span>Wickets: </span><span id="wickets">0</span>
-        <span>Target: </span><span id="target">N/A</span>
+        
+        <div class="play-stats">
+            <div class="stat-box">
+                <div class="stat-label">Score</div>
+                <div class="stat-value" id="score">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Wickets</div>
+                <div class="stat-value" id="wickets">0</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Target</div>
+                <div class="stat-value" id="target">N/A</div>
+            </div>
+        </div>
 
         <div id="user-side"></div>
-        <div id="play-type"></div>
 
         <button id="play">Play</button>
     </div>
